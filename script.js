@@ -15,7 +15,7 @@ function ManipulateData(){
 	}).then((secData)=>{
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
-				let newArr=secData.filter((n)=>n*2);
+				let newArr=secData.map((n)=>n*2);
 				output.textContent=newArr.join(' ');
 				resolve(newArr);
 			},2000)
