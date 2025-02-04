@@ -8,7 +8,7 @@ function ManipulateData(){
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
 				let evenArr=firstData.filter((n)=>n%2==0);
-				output.textContent=evenArr.join(' ');
+				output.textContent=evenArr.join(',');
 				resolve(evenArr);
 			},1000)
 		})
@@ -16,7 +16,7 @@ function ManipulateData(){
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
 				let newArr=secData.map((n)=>n*2);
-				output.textContent=newArr.join(' ');
+				output.textContent=newArr.join(',');
 				resolve(newArr);
 			},2000)
 		})
